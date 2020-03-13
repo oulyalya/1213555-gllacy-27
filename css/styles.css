@@ -1586,18 +1586,6 @@ input.btn.login-btn {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /*width of blocks*/
 .price-range {
 	width: 220px;
@@ -1613,29 +1601,6 @@ input.btn.login-btn {
 
 
 /*appearance of blocks*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1672,23 +1637,7 @@ input.btn.login-btn {
 }
 /*filters end*/
 
-
-
-
-
-
-
-
-
-
-
-
-/*
-ul.catalog {
-	
-}*/
-
-
+/*catalog start*/
 .catalog { 
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -1813,10 +1762,9 @@ a.catalog-item {
 .see-more:hover {
 	display: block;
 }
+/*catalog end*/
 
-
-
-/*catalog pagination start*/
+/*pagination start*/
 .pagination-list {
 	list-style: none;
 	display: -webkit-flex;
@@ -1906,21 +1854,3 @@ a.catalog-item {
 	color: black;
 }
 /*catalog pagination end*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
