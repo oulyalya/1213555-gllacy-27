@@ -58,47 +58,123 @@
                         </ul>
                     </nav>
                     <ul class="header-user-menu">
-                        <li class="header-search-option">
-                            <div class="search-button">
-                                <h2 class="visually-hidden">Поиск товаров</h2>
-                                <a href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17">
-                                        <path fill="#FFF" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z" />
-                                    </svg>
-                                </a>
-                            </div>
-                            <!-- <div  class="header-user-search"><input type="search" placeholder="Крем-брюле"></div> -->
-                        </li>
-                        <li class="header-login-option">
-                            <h2 class="visually-hidden">Войти в кабинет</h2>
-                            <div class="login-button">
-                                <a class="header-user-login" href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19">
-                                        <g fill="#FFF">
-                                            <path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z" />
-                                            <path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z" />
-                                        </g>
-                                    </svg>
-                                    Вход
+						<li class="header-user-option">
+							<a class="header-user-link header-user-search" href="#" aria-label="Поиск товаров">
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17">
+								<path d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z" />
+								</svg>
+							</a>
+							<div class="header-user-search-hidden popup">
+								<input type="search" placeholder="Крем-брюле">
+							</div>
+						</li>
+						<li class="header-user-option">
+							<a class="header-user-link header-user-login" href="#"  aria-label="Войти в личный кабинет">
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19">
+								<g>
+								<path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z" />
+								<path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z" />
+								</g>
+								</svg>
+								Вход
+							</a>
+							<div class="header-user-login-hidden popup">
+								<form class="header-login-form" id="header-login-form" action="https://echo.htmlacademy.ru" method="post">
+									<input class="header-login-form-input" type="email" name="email" placeholder="email@example.com">
+									<input  class="header-login-form-input" type="password" name="password" placeholder="••••••••">
+									<div class="header-login-form-half">
+										<input class="btn login-btn" type="submit" value="Войти">
+										<div class="header-login-form-options">
+											<a class="link-dark" href="#">Забыли пароль?</a>
+											<a class="link-dark" href="#">Новая регистрация</a>
+										</div>
+									</div>
+								</form>
+							</div>
+						</li>
+						<li class="header-user-option">
+							<a class="header-user-link header-user-cart" href="#"  aria-label="Корзина">
+								<svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20">
+								<g>
+								<path d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z" />
+								<circle cx="6.984" cy="18" r="2" />
+								<circle cx="15.984" cy="18" r="2" />
+								</g>
+								</svg>
+								<span class="cart-state">Пусто</span>
+							</a>
+							<div class="header-user-cart-hidden popup">
+								<table class="header-user-cart-table">
+									<tr>
+										<td class="cell-remove">
+											<button class="remove-from-cart" type="button">
+												<span class="visually-hidden">Удалить товар</span>
+												<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11">
+												<path fill="#231F20" d="M10.979.728l-.708-.707L5.5 4.792.729.021.021.728 4.793 5.5.021 10.271l.707.708L5.5 6.207l4.771 4.772.708-.708L6.207 5.5z"/>
+												</svg>
+											</button>
+										</td>
+										<td class="cell-img">
+											<img class="cart-pic" src="img/cart-1.jpg" alt="">
+										</td>
+										<td class="cell-title">
+											<a class="cart-item" href="#">
+												Пломбир с апельсиновым джемом
+											</a>
+										</td>
+										<td class="cell-weight">
+											<span class="cart-weight">1,5 кг</span>
+										</td>
+										<td class="cell-symbol">
+											&times;
+										</td>
+										<td class="cell-price">
+											<span class="cart-price">200 руб.</span>
+										</td>
+										<td class="cell-total">
+											<span class="cart-total">300 руб.</span>
+										</td>
+									</tr>
+									<tr>
+										<td class="cell-remove">
+											<button class="remove-from-cart" type="button">
+												<span class="visually-hidden">Удалить товар</span>
+												<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11">
+												<path fill="#231F20" d="M10.979.728l-.708-.707L5.5 4.792.729.021.021.728 4.793 5.5.021 10.271l.707.708L5.5 6.207l4.771 4.772.708-.708L6.207 5.5z"/>
+												</svg>
+											</button>
+										</td>
+										<td class="cell-img">
+											<img class="cart-pic" src="img/cart-2.jpg" alt="">
+										</td>
+										<td class="cell-title">
+											<a  class="cart-item" href="#">
+												Клубничный пломбир с присыпкой 
+												из белого шоколада
+											</a>
+										</td>
+										<td class="cell-weight">
+											<span class="cart-weight">1,5 кг</span>
+										</td>
+										<td class="cell-symbol">
+											&times;
+										</td>
+										<td class="cell-price">
+											<span class="cart-price">300 руб.</span>
+										</td>
+										<td class="cell-total">
+											<span class="cart-total">450 руб.</span>
+										</td>
+									</tr>
+								</table>
+								<div class="cart-order">
+									<p class="cart-total-price">Итого: <span>750 руб.</span></p>
+									<a class="btn cart-btn" href="#">Оформить заказ</a>
+								</div>
 
-                                </a>
-                        </div>
-                                <!-- <div class="header-login-form" id="header-login-form"><form action="#" method="post"><input type="email" name="email" placeholder="email@example.com"><input type="password" name="password" placeholder="••••••••"><input type="submit" value="Войти"><div class="header-login-form-options"><a href="#">Забыли пароль?</a><a href="#">Новая регистрация</a></div></form></div> -->
-                        </li>
-                        <li class="header-cart-option">
-                            <h2 class="visually-hidden">Корзина</h2>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20">
-                                <g fill="#FFF">
-                                    <path d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z" />
-                                    <circle cx="6.984" cy="18" r="2" />
-                                    <circle cx="15.984" cy="18" r="2" />
-                                </g>
-                            </svg>
-                            <a class="header-user-cart" href="#" aria-label="Корзина">
-                                <span class="cart-state">Пусто</span>
-                            </a>
-                        </li>
-                    </ul>
+							</div>							
+						</li>
+					</ul>
                     <div class="header-contacts">
                         <h2 class="visually-hidden">Контакты</h2>
                         <p class="opening-hours">С 10 до 20, ежедневно</p>
@@ -147,8 +223,6 @@
                 <a class="btn promo-btn" href="#">Хочу шоколадки!</a>
             </article>
         </section>
-    </div><!-- /wrapper -->
-    <div class="wrapper">
         <section>
             <h2 class="visually-hidden">Хиты продаж</h2>
             <ul class="sales-hits">
