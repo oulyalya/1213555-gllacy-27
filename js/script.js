@@ -51,7 +51,7 @@ close.addEventListener("click", function(evt) {
 form.addEventListener("submit", function (evt) {
 	if (!person.value || !email.value) {
 		evt.preventDefault();
-		console.log("ошибка");
+		modal.classList.add("modal-error");
 	}	else {
 		if (isStorageSupport) {
         localStorage.setItem("person", person.value);
