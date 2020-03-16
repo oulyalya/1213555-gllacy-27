@@ -329,33 +329,36 @@
                     </form>
                 </section>
             </div>
-            <section class="contacts">
-                <h2 class="visually-hidden">Контакты и адреса магазинов</h2>
-                <div class="map-iframe">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.64217034152!2d30.32287573695322!3d59.9380796149229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1584048183333!5m2!1sru!2sua" width="1200" height="430" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                </div>
-                <div class="map-pic">
-                    <img src="img/map.jpg" alt="Мы находимся по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" width="1200" height="640">
-                </div>
-                <div class="address">
-                    <h3>Адрес главного офиса и офлайн-магазина:</h3>
-                    <p class="address-bold">
-                        <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
-                    </p>
-                    <h3>Для заказов по телефону:</h3>
-                    <a class="phone-bold" href="tel:+78124502525">8 812 450-25-25</a>
-                    <p class="contacts-opening-hours">(с 10 до 20 ежедневно)</p>
-                    <a class="btn address-popup-btn btn-modal" href="#">Форма обратной связи</a>
+        </div> <!-- /wrapper    -->
+            <section class="contacts"> 
+                <div class="wrapper">
+                	<h2 class="visually-hidden">Контакты и адреса магазинов</h2>     
+                	<div class="map-pic">
+	                    <img src="img/map.jpg" alt="Мы находимся по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" width="1200" height="640">
+	                </div>
+	                <div class="address">
+	                    <h3>Адрес главного офиса и офлайн-магазина:</h3>
+	                    <p class="address-bold">
+	                        <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
+	                    </p>
+	                    <h3>Для заказов по телефону:</h3>
+	                    <a class="phone-bold" href="tel:+78124502525">8 812 450-25-25</a>
+	                    <p class="contacts-opening-hours">(с 10 до 20 ежедневно)</p>
+	                    <a class="btn address-popup-btn open-modal" href="#">Форма обратной связи</a>
+	                </div>
+	            </div>
+	            <div class="map-iframe">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.64217034152!2d30.32287573695322!3d59.9380796149229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1584048183333!5m2!1sru!2sua" width="100%" height="430" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>
             </section>
             <div class="modal-wrapper">
 				<section class="modal modal-callback">
+					<h2>Мы обязательно вам ответим!</h2>
 					<button class="modal-close" type="button">
 						<span class="visually-hidden">Закрыть</span>
 					</button>
-					<h2>Мы обязательно вам ответим!</h2>
 					<form class="callback-form" action="https://echo.htmlacademy.ru" method="post">
-						<input type="text" placeholder="Имя Фамилия">
+						<input type="text" name="namesurname" placeholder="Имя Фамилия">
 						<input type="email" name="email" placeholder="email@example.com">
 						<textarea name="callback" name="message" rows="10" placeholder="В свободной форме"></textarea>
 						<input class="btn callback-btn" type="submit" value="Отправить">
@@ -363,6 +366,7 @@
 				</section>
 			</div>
         </main>
+    <div class="wrapper">
         <footer class="page-footer index-footer">
             <div class="footer-left">
                 <ul class="socials">

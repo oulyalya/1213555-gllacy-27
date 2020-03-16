@@ -1163,8 +1163,9 @@ input.btn.login-btn {
 	position: absolute;
 	top: 0;
 	left: 0;
+	right: 0;
 	width: 100%;
-	min-height: 430px;
+	height: 430px;
 	z-index: 7;
 }
 
@@ -2141,6 +2142,7 @@ a.catalog-item {
 	position: fixed;
 	top: 0;
 	left: 0;
+	right: 0;
 
 	z-index: 50;
 	width: 100%;
@@ -2160,6 +2162,32 @@ a.catalog-item {
 	animation: bounce 0.6s;
 }
 
+.modal-error {
+  animation: shake 0.6s;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 .modal {
 	position: fixed;
 	left: 0;
@@ -2170,7 +2198,6 @@ a.catalog-item {
 	background-color: #f8f7f4;
 	border-radius: 10px;
 }
-
 
 .modal-callback {
 	top: 50%;
