@@ -51,9 +51,7 @@ close.addEventListener("click", function(evt) {
 form.addEventListener("submit", function (evt) {
 	if (!person.value || !email.value) {
 		evt.preventDefault();
-		// modal.classList.remove("modal-error");
-  //   	modal.offsetWidth = popup.offsetWidth;
-    	modal.classList.add("modal-error");
+		console.log("ошибка");
 	}	else {
 		if (isStorageSupport) {
         localStorage.setItem("person", person.value);
@@ -66,12 +64,5 @@ window.addEventListener("keydown", function(evt) {
 	if (background.classList.contains("modal-show-wrapper")) {
 		background.classList.remove("modal-show-wrapper");
 		modal.classList.remove("modal-error");
-	}
-})
-
-background.addEventListener("click", function(evt) {
-	evt.preventDefault();
-	if (background.classList.contains("modal-show-wrapper")) {
-		background.classList.remove("modal-show-wrapper");
 	}
 })
