@@ -26,13 +26,13 @@ a {
 }
 
 .visually-hidden {
-	position: absolute !important;
-	width: 1px !important;
-	height: 1px !important;
+	position: absolute;
+	width: 1px;
+	height: 1px;
 	margin: -1px;
-	padding: 0 !important;
-	border: 0 !important;
-		clip: rect(1px, 1px, 1px, 1px);
+	padding: 0;
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
 	overflow: hidden;
 }
 
@@ -216,7 +216,7 @@ a {
 .header-submenu-list {
 	position: absolute;
 	top: 40px;
-	display: block;
+	min-width: 150px;
 	display: none;
 	background-color: white;
 	box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
@@ -861,15 +861,23 @@ input.btn.login-btn {
 }
 
 .promo {
-	position: relative;
-	display: block;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
 	width: 560px;
 	min-height: 229px;
 	padding-top: 15px;
-	padding-bottom: 20px;
+	padding-bottom: 23px;
 	padding-left: 18px;
 	padding-right: 20px;
-	background-repeat: no-repeat;
+	background-repeat: repeat-y;
 	border-radius: 15px;
 	color: white;
 }
@@ -885,6 +893,7 @@ input.btn.login-btn {
 
 .promo p {
 	margin: 0;
+	margin-bottom: 20px;
 	padding: 0;
 	font-size: 18px;
 	line-height: 22px;
@@ -902,10 +911,9 @@ input.btn.login-btn {
 }
 
 .promo-btn {
-	position: absolute;
-	bottom: 23px;
-	right: 20px;
 	min-width: 165px;
+	margin-left: auto;
+	margin-top: auto;
 	padding-right: 22px;
 	padding-left: 22px;
 	text-align: center;
@@ -1208,7 +1216,7 @@ input.btn.login-btn {
 	min-height: 430px;
 }
 
-.map-iframe {
+.map-iframe iframe {
 	position: absolute;
 	top: 0;
 	left: 0;
